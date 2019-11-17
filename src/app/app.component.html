@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+	 
+<h1>push-notification</h1>
+
+Current Message
+
+<h1>{{ (message | async)?.notification.title }}</h1>
+
+<p>{{ (message | async)?.notification.body }}</p>
+
+
+{{ message | async | json }}
+
+<router-outlet></router-outlet>
